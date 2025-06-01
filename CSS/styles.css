@@ -1,0 +1,80 @@
+/* 4 - external */
+body{
+    padding-bottom: 500px;
+}
+h3{
+    color: green;
+}
+p{
+    color: blueviolet   
+}
+ul{
+    border: 1px solid blue;
+    padding: 10px;
+}
+li{
+    color: rgb(0, 0, 66) ;
+
+}
+
+/* algum comentário */
+/* mais um comentário*/
+/* terceiro comentário */
+
+/* classes */
+.paragraph {
+    background-color: rgb(0, 0, 0);
+    color: aqua;
+    padding: 5px;
+}
+
+/* IDs */
+#exclusive-title{
+    background-color: purple;
+    color: yellow;
+    padding: 10px;
+    font-size: 40px;
+}
+
+/* ordem das regras */
+h2{
+    border-bottom: 2px solid red;
+}
+
+.titulo {
+    border-bottom: 3px solid blue;
+}
+
+#algum-titulo{
+    border-bottom: 4px solid rgb(0, 255, 26);
+}
+    /* nome de cores*/
+    .color-name{
+        color: crimson
+    }
+
+    /* hex*/
+    .hex {
+        color: #555a55;
+    }
+
+    .hex-2 {
+        color: #00eaff;
+    }
+
+    /* aprofundando em hex */
+    .simple-hex{
+        color: #333;
+    }
+    .simple-hex-2{
+        color: #a55f;
+    }
+
+    /* rgb */
+    .rgb {
+        color: rgb(255,0,0)
+    }
+
+    .mixed-rgb {
+        color: rgb(157,171,0)
+    }

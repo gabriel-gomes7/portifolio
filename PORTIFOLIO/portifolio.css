@@ -1,0 +1,261 @@
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ESTILO BASE DO BODY */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #121212;
+  /* Fundo escuro para tema dark */
+  color: #f1f1f1;
+  /* Cor padrão dos textos */
+  line-height: 1.6;
+  /* Altura entre linhas para melhor leitura */
+  padding: 1rem;
+  /* Espaçamento nas bordas da página */
+}
+
+/* CABEÇALHO DO SITE */
+header {
+  background-color: #1e1e1e;
+  /* Um pouco mais claro que o fundo do body */
+  padding: 1.5rem 1rem;
+  /* Espaçamento interno */
+  text-align: center;
+  /* Centraliza o conteúdo */
+  border-bottom: 1px solid #333;
+  /* Linha discreta abaixo do header */
+}
+
+/* TÍTULO PRINCIPAL */
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+
+}
+body.tema-claro header h1 {
+  color: #000000; /* no tema claro, título fica preto */
+}
+
+/* MENU DE NAVEGAÇÃO */
+nav ul {
+  list-style: none;
+  /* Remove bolinhas da lista */
+  display: flex;
+  /* Deixa os itens lado a lado */
+  justify-content: center;
+  /* Centraliza os links */
+  gap: 1.5rem;
+  /* Espaço entre os itens */
+  flex-wrap: wrap;
+  /* Permite quebrar linha se necessário */
+}
+
+nav a {
+  color: #f1f1f1;
+  /* Cor clara dos links */
+  text-decoration: none;
+  /* Remove sublinhado */
+  font-weight: bold;
+  transition: color 0.3s ease;
+  /* Suaviza a mudança de cor no hover */
+}
+
+nav a:hover {
+  color: #00bfff;
+  /* Azul claro ao passar o mouse */
+}
+
+/* SEÇÃO SOBRE MIM */
+#sobre {
+  padding: 2rem 1rem;
+  /* Espaço interno na seção */
+  max-width: 900px;
+  /* Largura máxima do conteúdo */
+  margin: 0 auto;
+  /* Centraliza horizontalmente */
+}
+
+#sobre h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  border-bottom: 1px solid #444;
+  padding-bottom: 0.5rem;
+}
+
+#sobre p {
+  font-size: 1rem;
+  color: #ccc;
+  /* Cinza claro para melhor contraste e leitura */
+}
+
+/* SEÇÃO PROJETOS */
+#projetos {
+  padding: 2rem 1rem;           /* Espaço interno da seção */
+  max-width: 900px;             /* Largura máxima do conteúdo */
+  margin: 0 auto;               /* Centraliza horizontalmente */
+}
+
+/* TÍTULO DA SEÇÃO */
+#projetos h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  border-bottom: 1px solid #444;
+  padding-bottom: 0.5rem;
+}
+
+/* CONTAINER DO GIF */
+.gif-container {
+  text-align: center;           /* Centraliza o conteúdo dentro do container */
+  margin-bottom: 1rem;          /* Espaço abaixo do GIF */
+}
+
+/* NOME DO PROJETO */
+.gif-container h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #00bfff;               /* Azul claro para destaque */
+}
+
+/* ESTILO DO GIF */
+.responsive-gif {
+  max-width: 100%;              /* Ocupa no máximo a largura do container */
+  height: auto;                 /* Mantém a proporção original do GIF */
+  border-radius: 8px;           /* Cantos arredondados */
+  border: 1px solid #333;       /* Borda discreta */
+}
+
+/* TEXTO "EM BREVE" */
+#projetos p {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #aaa;
+}
+
+/* Seção Contato */
+#contato {
+  background-color: #1e1e1e; /* Fundo levemente diferente pra destacar */
+  padding: 2rem 1rem;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  text-align: center;
+}
+
+#contato h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #f8f8f8;
+}
+
+#contato ul {
+  list-style: none; /* Remove bolinhas */
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+#contato li a {
+  color: #00bfff; /* Cor azul claro para links */
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+#contato li a:hover {
+  color: #ffffff; /* Branco ao passar o mouse */
+}
+
+#toggle-tema { /* Estilo para o botão de alternar tema */
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #00bfff;
+  color: #121212;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  transition: background-color 0.3s ease;
+  z-index: 999;
+}
+
+body.tema-claro {
+  background-color: #f1f1f1;   /* Fundo claro */
+  color: #121212;              /* Texto escuro */
+}
+
+body.tema-claro header {
+  background-color: #ffffff;   /* Header branco */
+  border-bottom: 1px solid #ccc;
+}
+
+body.tema-claro nav a {
+  color: #121212;              /* Links escuros */
+}
+
+body.tema-claro nav a:hover {
+  color: #007acc;              /* Azul ao passar o mouse */
+}
+
+body.tema-claro #sobre h2,
+body.tema-claro #projetos h2,
+body.tema-claro #contato h2 {
+  color: #121212;              /* Títulos escuros */
+  border-bottom: 1px solid #ccc;
+}
+
+body.tema-claro #sobre p,
+body.tema-claro #projetos p {
+  color: #333;                 /* Texto mais escuro */
+}
+
+body.tema-claro .gif-container h3 {
+  color: #007acc;              /* Azul mais escuro nos títulos de projeto */
+}
+
+body.tema-claro #contato {
+  background-color: #ffffff;   /* Fundo claro da seção de contato */
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+body.tema-claro #contato li a {
+  color: #007acc;              /* Links azuis */
+}
+
+body.tema-claro #contato li a:hover {
+  color: #000;                 /* Preto ao passar o mouse */
+}
+#toggle-tema {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #1e1e1e;
+  border: none;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #f1f1f1;
+  font-size: 1.2rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.tema-claro #toggle-tema {
+  background-color: #e0e0e0;
+  color: #121212;
+}
