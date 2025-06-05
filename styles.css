@@ -9,77 +9,54 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #121212;
-  /* Fundo escuro para tema dark */
   color: #f1f1f1;
-  /* Cor padrão dos textos */
   line-height: 1.6;
-  /* Altura entre linhas para melhor leitura */
   padding: 1rem;
-  /* Espaçamento nas bordas da página */
 }
 
 /* CABEÇALHO DO SITE */
 header {
   background-color: #1e1e1e;
-  /* Um pouco mais claro que o fundo do body */
   padding: 1.5rem 1rem;
-  /* Espaçamento interno */
   text-align: center;
-  /* Centraliza o conteúdo */
   border-bottom: 1px solid #333;
-  /* Linha discreta abaixo do header */
 }
 
-/* TÍTULO PRINCIPAL */
 header h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
   color: #ffffff;
-
 }
 
 body.tema-claro header h1 {
   color: #000000;
-  /* no tema claro, título fica preto */
 }
 
 /* MENU DE NAVEGAÇÃO */
 nav ul {
   list-style: none;
-  /* Remove bolinhas da lista */
   display: flex;
-  /* Deixa os itens lado a lado */
   justify-content: center;
-  /* Centraliza os links */
   gap: 1.5rem;
-  /* Espaço entre os itens */
   flex-wrap: wrap;
-  /* Permite quebrar linha se necessário */
 }
 
 nav a {
   color: #f1f1f1;
-  /* Cor clara dos links */
   text-decoration: none;
-  /* Remove sublinhado */
   font-weight: bold;
   transition: color 0.3s ease;
-  /* Suaviza a mudança de cor no hover */
 }
 
 nav a:hover {
   color: #00bfff;
-  /* Azul claro ao passar o mouse */
 }
 
 /* SEÇÃO SOBRE MIM */
 #sobre {
   padding: 2rem 1rem;
-  /* Espaço interno na seção */
   max-width: 900px;
-  /* Largura máxima do conteúdo */
   margin: 0 auto;
-  /* Centraliza horizontalmente */
 }
 
 #sobre h2 {
@@ -93,38 +70,54 @@ nav a:hover {
 #sobre p {
   font-size: 1rem;
   color: #ccc;
-  /* Cinza claro para melhor contraste e leitura */
+  text-align: center; /* ← Centralização aplicada */
 }
-#sobre-mim {
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto;
+
+/* SEÇÃO DE TECNOLOGIAS */
+.tech-stack {
   padding: 2rem;
+  text-align: center;
 }
 
-#sobre-mim h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+.tech-category {
+  margin-bottom: 2rem;
 }
 
-#sobre-mim p {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #444;
+.tech-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
 }
 
+.tech-icons div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2.5rem;
+  transition: transform 0.3s ease;
+  color: #333;
+}
+
+.tech-icons div:hover {
+  transform: scale(1.1);
+  color: #007bff;
+}
+
+.tech-icons span {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #555;
+}
 
 /* SEÇÃO PROJETOS */
 #projetos {
   padding: 2rem 1rem;
-  /* Espaço interno da seção */
   max-width: 900px;
-  /* Largura máxima do conteúdo */
   margin: 0 auto;
-  /* Centraliza horizontalmente */
 }
 
-/* TÍTULO DA SEÇÃO */
 #projetos h2 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
@@ -133,35 +126,24 @@ nav a:hover {
   padding-bottom: 0.5rem;
 }
 
-/* CONTAINER DO GIF */
 .gif-container {
   text-align: center;
-  /* Centraliza o conteúdo dentro do container */
   margin-bottom: 1rem;
-  /* Espaço abaixo do GIF */
 }
 
-/* NOME DO PROJETO */
 .gif-container h3 {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
   color: #00bfff;
-  /* Azul claro para destaque */
 }
 
-/* ESTILO DO GIF */
 .responsive-gif {
   max-width: 100%;
-  /* Ocupa no máximo a largura do container */
   height: auto;
-  /* Mantém a proporção original do GIF */
   border-radius: 8px;
-  /* Cantos arredondados */
   border: 1px solid #333;
-  /* Borda discreta */
 }
 
-/* TEXTO "EM BREVE" */
 #projetos p {
   text-align: center;
   margin-top: 1rem;
@@ -169,10 +151,9 @@ nav a:hover {
   color: #aaa;
 }
 
-/* Seção Contato */
+/* SEÇÃO CONTATO */
 #contato {
   background-color: #1e1e1e;
-  /* Fundo levemente diferente pra destacar */
   padding: 2rem 1rem;
   border-top: 1px solid #333;
   border-bottom: 1px solid #333;
@@ -187,7 +168,6 @@ nav a:hover {
 
 #contato ul {
   list-style: none;
-  /* Remove bolinhas */
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -197,7 +177,6 @@ nav a:hover {
 
 #contato li a {
   color: #00bfff;
-  /* Cor azul claro para links */
   text-decoration: none;
   font-size: 1.1rem;
   transition: color 0.3s ease;
@@ -205,85 +184,9 @@ nav a:hover {
 
 #contato li a:hover {
   color: #ffffff;
-  /* Branco ao passar o mouse */
 }
 
-#toggle-tema {
-  /* Estilo para o botão de alternar tema */
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  background-color: #00bfff;
-  color: #121212;
-  border: none;
-  border-radius: 8px;
-  padding: 0.7rem 1rem;
-  font-weight: bold;
-  cursor: pointer;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-  transition: background-color 0.3s ease;
-  z-index: 999;
-}
-
-body.tema-claro {
-  background-color: #f1f1f1;
-  /* Fundo claro */
-  color: #121212;
-  /* Texto escuro */
-}
-
-body.tema-claro header {
-  background-color: #ffffff;
-  /* Header branco */
-  border-bottom: 1px solid #ccc;
-}
-
-body.tema-claro nav a {
-  color: #121212;
-  /* Links escuros */
-}
-
-body.tema-claro nav a:hover {
-  color: #007acc;
-  /* Azul ao passar o mouse */
-}
-
-body.tema-claro #sobre h2,
-body.tema-claro #projetos h2,
-body.tema-claro #contato h2 {
-  color: #121212;
-  /* Títulos escuros */
-  border-bottom: 1px solid #ccc;
-}
-
-body.tema-claro #sobre p,
-body.tema-claro #projetos p {
-  color: #333;
-  /* Texto mais escuro */
-}
-
-body.tema-claro .gif-container h3 {
-  color: #007acc;
-  /* Azul mais escuro nos títulos de projeto */
-}
-
-body.tema-claro #contato {
-  background-color: #ffffff;
-  /* Fundo claro da seção de contato */
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
-}
-
-body.tema-claro #contato li a {
-  color: #007acc;
-  /* Links azuis */
-}
-
-body.tema-claro #contato li a:hover {
-  color: #000;
-  /* Preto ao passar o mouse */
-}
-
+/* BOTÃO DE TEMA */
 #toggle-tema {
   position: fixed;
   top: 20px;
@@ -298,70 +201,60 @@ body.tema-claro #contato li a:hover {
   gap: 0.5rem;
   color: #f1f1f1;
   font-size: 1.2rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
   transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ESTILOS PARA TEMA CLARO */
+body.tema-claro {
+  background-color: #f1f1f1;
+  color: #121212;
+}
+
+body.tema-claro header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ccc;
+}
+
+body.tema-claro nav a {
+  color: #121212;
+}
+
+body.tema-claro nav a:hover {
+  color: #007acc;
+}
+
+body.tema-claro #sobre h2,
+body.tema-claro #projetos h2,
+body.tema-claro #contato h2 {
+  color: #121212;
+  border-bottom: 1px solid #ccc;
+}
+
+body.tema-claro #sobre p,
+body.tema-claro #projetos p {
+  color: #333;
+}
+
+body.tema-claro .gif-container h3 {
+  color: #007acc;
+}
+
+body.tema-claro #contato {
+  background-color: #ffffff;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+body.tema-claro #contato li a {
+  color: #007acc;
+}
+
+body.tema-claro #contato li a:hover {
+  color: #000;
 }
 
 body.tema-claro #toggle-tema {
   background-color: #e0e0e0;
   color: #121212;
-}
-
-/* Estilo geral da seção de tecnologias */
-.tech-stack {
-  padding: 2rem;
-  /* Espaçamento interno */
-  text-align: center;
-  /* Centraliza todo o conteúdo */
-}
-
-/* Espaçamento entre cada categoria */
-.tech-category {
-  margin-bottom: 2rem;
-}
-
-/* Área que contém os ícones */
-.tech-icons {
-  display: flex;
-  /* Flexbox para alinhar horizontalmente */
-  justify-content: center;
-  /* Centraliza os itens */
-  gap: 2rem;
-  /* Espaço entre os itens */
-  flex-wrap: wrap;
-  /* Permite quebrar linha em telas pequenas */
-  margin-top: 1rem;
-}
-
-/* Estilo de cada item (ícone + texto) */
-.tech-icons div {
-  display: flex;
-  flex-direction: column;
-  /* Ícone em cima, texto embaixo */
-  align-items: center;
-  /* Centraliza no eixo vertical */
-  font-size: 2.5rem;
-  /* Tamanho do ícone */
-  transition: transform 0.3s ease;
-  /* Animação no hover */
-  color: #333;
-  /* Cor padrão dos ícones */
-}
-
-/* Efeito ao passar o mouse no ícone */
-.tech-icons div:hover {
-  transform: scale(1.1);
-  /* Aumenta levemente o ícone */
-  color: #007bff;
-  /* Muda a cor (azul) */
-}
-
-/* Estilo do texto embaixo dos ícones */
-.tech-icons span {
-  margin-top: 0.5rem;
-  /* Espaço entre ícone e nome */
-  font-size: 0.9rem;
-  /* Tamanho do texto */
-  color: #555;
-  /* Cor mais suave */
 }
