@@ -113,6 +113,10 @@ nav a:hover {
   color: #444;
 }
 
+#sobre-mim p:hover{
+  transition: .3s ease-in-out;
+  color: #b5b3b3;
+}
 
 /* SEÇÃO PROJETOS */
 #projetos {
