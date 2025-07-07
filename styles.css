@@ -403,3 +403,7 @@ body.tema-claro #toggle-tema {
     transform: translate(-50%, -10px);
   }
 }
+footer {
+  text-align: center;
+}
+
