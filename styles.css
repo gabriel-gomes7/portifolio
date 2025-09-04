@@ -130,6 +130,7 @@ nav a:hover {
 
 /* TÍTULO DA SEÇÃO */
 #projetos h2 {
+  
   font-size: 1.8rem;
   margin-bottom: 1rem;
   color: #ffffff;
@@ -137,41 +138,23 @@ nav a:hover {
   padding-bottom: 0.5rem;
 }
 
-/* CONTAINER DO GIF */
-.gif-container {
+/* estilizando o projeto  */
+.projeto {
+
   text-align: center;
-  /* Centraliza o conteúdo dentro do container */
-  margin-bottom: 1rem;
-  /* Espaço abaixo do GIF */
-}
-
-/* NOME DO PROJETO */
-.gif-container h3 {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-  color: #00bfff;
-  /* Azul claro para destaque */
-}
-
-/* ESTILO DO GIF */
-.responsive-gif {
-  max-width: 100%;
-  /* Ocupa no máximo a largura do container */
-  height: auto;
-  /* Mantém a proporção original do GIF */
-  border-radius: 8px;
-  /* Cantos arredondados */
+  margin-bottom: 2rem;
+  background-size: contain;
+  text-align: center;
+  padding: 1rem;
   border: 1px solid #333;
-  /* Borda discreta */
+
+}
+.projeto img {
+  width: 100%;
+  max-width: 400px; /* ajusta para o que quiser */
+  height: auto;
 }
 
-/* TEXTO "EM BREVE" */
-#projetos p {
-  text-align: center;
-  margin-top: 1rem;
-  font-size: 0.95rem;
-  color: #aaa;
-}
 
 /* Seção Contato */
 #contato {
