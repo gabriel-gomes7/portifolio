@@ -38,6 +38,7 @@ header h1 {
 
 }
 
+
 body.tema-claro header h1 {
   color: #000000;
   /* no tema claro, título fica preto */
@@ -135,6 +136,7 @@ nav a:hover {
   color: #ffffff;
   border-bottom: 1px solid #444;
   padding-bottom: 0.5rem;
+  text-align: center;
 }
 
 /* estilizando o projeto  */
@@ -328,7 +330,7 @@ body.tema-claro #toggle-tema {
   /* Centraliza no eixo vertical */
   font-size: 2.5rem;
   /* Tamanho do ícone */
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, color 0.3s ease;
   /* Animação no hover */
   color: #333;
   /* Cor padrão dos ícones */
