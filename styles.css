@@ -41,7 +41,7 @@ header h1 {
 
 body.tema-claro header h1 {
   color: #ffffff;
-  /* no tema claro, título fica preto */
+  /* terei de alterar p branco pq escuro com o gif de fundo n tá combinando */
 }
 
 /* MENU DE NAVEGAÇÃO */
