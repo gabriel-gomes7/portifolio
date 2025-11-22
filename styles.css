@@ -410,6 +410,7 @@ footer {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   transition: background-color 0.3s ease, transform 0.3s ease;
   text-decoration: none;
+  margin: 0px 20px 0px  20px;
 }
 .botao-p:hover {
   transform: scale(1.05);
@@ -424,4 +425,8 @@ body.tema-claro .botao-p {
 body.tema-claro .botao-p:hover {
   background-color: #007acc;
   color: #fff;
+}
+/* tirando o "excesso" de borda vertical */
+html, body {
+  overflow-x: hidden;
 }
