@@ -39,10 +39,7 @@ header h1 {
 }
 
 
-body.tema-claro header h1 {
-  color: #ffffff;
-  /* terei de alterar p branco pq escuro com o gif de fundo n tá combinando */
-}
+
 
 /* MENU DE NAVEGAÇÃO */
 nav ul {
@@ -367,6 +364,16 @@ body.tema-claro #toggle-tema {
   justify-content: center;
   align-items: center;
 }
+.wallpaper h1,
+body.tema-claro .wallpaper h1 {
+  color: #ffffff;
+  
+}
+.wallpaper h1 {
+  text-shadow: 0 0 10px rgba(0,0,0,0.7);
+}
+
+
 .scroll-down {
   position: absolute;
   bottom: 20px; /* distância do fundo */
