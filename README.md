@@ -19,8 +19,9 @@ JavaScript
 <img width="1263" height="560" alt="image" src="https://github.com/user-attachments/assets/0a25dbbd-9414-480f-82b8-9c9ee1e93d61" />
 
 
-📂 Organização dos Arquivos
-.
+📂 Organização dos Arquivos.
+
+
 ├── background img.gif        # Imagem de fundo do site
 
 ├── index.html                # Estrutura principal do portfólio
@@ -31,7 +32,7 @@ JavaScript
 
 ├── thumbnail.png             # Thumbnail do site para o GitHub Pages
 
-└── zenitsu_tributo_page.png  # Imagem do projeto tributo
+└── zenitsu_tributo_page.png             # Imagem do projeto tributo
 
 👤 Autor / Contato
 
