@@ -410,7 +410,7 @@ footer {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   transition: background-color 0.3s ease, transform 0.3s ease;
   text-decoration: none;
-  margin: 0px 20px 0px  20px;
+  margin: 0px 10px 0px  20px;
 }
 .botao-p:hover {
   transform: scale(1.05);
@@ -430,3 +430,32 @@ body.tema-claro .botao-p:hover {
 html, body {
   overflow-x: hidden;
 }
+/* CARROSSEL DE PROJETOS */
+.carousel {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 2rem;
+  animation: scroll-horizontal 25s linear infinite;
+}
+
+/* garante largura consistente dos cards */
+.projeto {
+  min-width: 350px;
+}
+@keyframes scroll-horizontal {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+/* pause */
+.carousel:hover .carousel-track {
+  animation-play-state: paused;
+}
+
